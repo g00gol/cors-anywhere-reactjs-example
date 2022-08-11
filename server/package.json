@@ -9,8 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cors-anywhere": "^0.4.4",
-    "fs": "^0.0.1-security",
-    "http": "^0.0.1-security"
+    "cors-anywhere": "^0.4.4"
   }
 }
