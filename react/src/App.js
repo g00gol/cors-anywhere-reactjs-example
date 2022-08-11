@@ -7,10 +7,10 @@ function App() {
   // set prefix to proxy/url (see default as example)
   // WARNING: YOU MUST INCLUDE THE '/' AFTER PREFIX
   //
-  const prefix = "http://localhost:5000/https://lindogourmet.com/";
+  const prefix = "http://localhost:5000/https://lindogourmet.com";
 
   useEffect(() => {
-    axios.get(prefix + "app/category/list").then((res) => {
+    axios.get((prefix ? prefix : "") + "/app/category/list").then((res) => {
       setResult(res.data);
       //
       // check console for data; if no data is displayed, check your proxy address and url
